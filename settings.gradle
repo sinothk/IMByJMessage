@@ -1,1 +1,1 @@
-include ':app', ':IMByTencent'
+include ':app', ':IMByJMessage'
