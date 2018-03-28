@@ -1,2 +1,2 @@
-# TencentIM
-腾讯云通信
+# 极光IM
+极光IM调整
