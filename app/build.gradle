@@ -31,5 +31,6 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    compile project(':IMByJMessage')
+    compile 'com.github.sinothk:IMByJMessage:v1.0'
+//    compile project(':IMByJMessage')
 }
