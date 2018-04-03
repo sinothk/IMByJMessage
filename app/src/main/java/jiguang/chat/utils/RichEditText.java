@@ -6,6 +6,7 @@ import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.AppCompatEditText;
 import android.text.Editable;
 import android.text.Selection;
 import android.text.Spannable;
@@ -32,7 +33,7 @@ import jiguang.chat.adapter.TextWatcherAdapter;
  * 具有Tag删除判断，和光标定位判断；预防用户胡乱篡改
  *
  */
-public class RichEditText extends android.support.v7.widget.AppCompatEditText {
+public class RichEditText extends AppCompatEditText {
     public static final String MATCH_MENTION = "@([^@^\\s^:^,^;^'，'^'；'^>^<]{1,})";//@([^@^\\s^:]{1,})([\\s\\:\\,\\;]{0,1})");//@.+?[\\s:]
     public static final String MATCH_TOPIC = "#.+?#";
     public static boolean DEBUG = false;

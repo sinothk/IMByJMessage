@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
 import cn.jpush.im.android.api.JMessageClient;
 import cn.jpush.im.android.api.callback.GetAvatarBitmapCallback;
 import cn.jpush.im.android.api.callback.GetGroupInfoCallback;
@@ -24,11 +22,8 @@ import jiguang.chat.utils.photochoose.PhotoUtils;
 
 public class GroupAvatarActivity extends BaseActivity implements View.OnClickListener {
 
-    @Bind(R.id.ll_back)
     LinearLayout llBack;
-    @Bind(R.id.iv_save)
     ImageView ivSave;
-    @Bind(R.id.iv_groupAvatar)
     ImageView ivGroupAvatar;
 
     ChoosePhoto mChoosePhoto;
@@ -37,7 +32,10 @@ public class GroupAvatarActivity extends BaseActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group_avatar);
-        ButterKnife.bind(this);
+
+        llBack= (LinearLayout) findViewById(R.id.ll_back);
+        ivSave= (ImageView) findViewById(R.id.iv_save);
+        ivGroupAvatar= (ImageView) findViewById(R.id.iv_groupAvatar);
 
         llBack.setOnClickListener(this);
         ivSave.setOnClickListener(this);

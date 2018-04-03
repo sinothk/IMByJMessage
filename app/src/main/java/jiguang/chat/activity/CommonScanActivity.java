@@ -35,8 +35,6 @@ import com.google.zxing.Result;
 
 import java.lang.reflect.Type;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
 import cn.jpush.im.android.api.JMessageClient;
 import cn.jpush.im.android.api.callback.GetUserInfoCallback;
 import cn.jpush.im.android.api.model.UserInfo;
@@ -67,17 +65,12 @@ public final class CommonScanActivity extends Activity implements ScanListener, 
     TextView qrcode_g_gallery;
     final int PHOTOREQUESTCODE = 1111;
 
-    @Bind(R.id.scan_image)
     ImageView scan_image;
-    @Bind(R.id.authorize_return)
     ImageView authorize_return;
     private int scanMode;//扫描模型（二维码）
 
-    @Bind(R.id.common_title_TV_center)
     TextView title;
-    @Bind(R.id.scan_hint)
     TextView scan_hint;
-    @Bind(R.id.tv_scan_result)
     TextView tv_scan_result;
 
 
@@ -88,7 +81,13 @@ public final class CommonScanActivity extends Activity implements ScanListener, 
         Window window = getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_scan_code);
-        ButterKnife.bind(this);
+
+        scan_image= findViewById(R.id.scan_image);
+        authorize_return= findViewById(R.id.authorize_return);
+        title= findViewById(R.id.common_title_TV_center);
+        scan_hint= findViewById(R.id.scan_hint);
+        tv_scan_result= findViewById(R.id.tv_scan_result);
+
         scanMode = getIntent().getIntExtra(Constant.REQUEST_SCAN_MODE, Constant.REQUEST_SCAN_MODE_ALL_MODE);
         initView();
     }

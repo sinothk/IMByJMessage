@@ -31,8 +31,6 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
 import cn.jpush.im.android.api.JMessageClient;
 import cn.jpush.im.android.api.callback.GetGroupInfoCallback;
 import cn.jpush.im.android.api.content.EventNotificationContent;
@@ -93,10 +91,9 @@ import jiguang.chat.view.listview.DropDownListView;
  */
 
 public class ChatActivity extends BaseActivity implements FuncLayout.OnFuncKeyBoardListener, View.OnClickListener {
-    @Bind(R.id.lv_chat)
     DropDownListView lvChat;
-    @Bind(R.id.ek_bar)
     XhsEmoticonsKeyBoard ekBar;
+
     public static final String JPG = ".jpg";
     private static String MsgIDs = "msgIDs";
 
@@ -155,7 +152,8 @@ public class ChatActivity extends BaseActivity implements FuncLayout.OnFuncKeyBo
         this.mImm = (InputMethodManager) mContext.getSystemService(Context.INPUT_METHOD_SERVICE);
         mChatView.setListeners(this);
 
-        ButterKnife.bind(this);
+        lvChat = (DropDownListView) findViewById(R.id.lv_chat);
+        ekBar = (XhsEmoticonsKeyBoard) findViewById(R.id.ek_bar);
 
         initData();
         initView();
