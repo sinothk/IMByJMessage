@@ -50,4 +50,14 @@ dependencies {
     compile files('libs/picasso-2.5.2.jar')
     compile files('libs/pinyin4j-2.5.0.jar')
     compile files('libs/universal-image-loader-1.9.5.jar')
+
+    //
+    compile 'com.android.support:multidex:1.0.3'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.contrarywind:Android-PickerView:3.2.4'
+    //
+    compile 'com.facebook.fresco:fresco:0.12.0'
 }
