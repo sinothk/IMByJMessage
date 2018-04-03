@@ -31,8 +31,7 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:3.0.1', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    //    compile project(':IMByJMessage')
-    compile project(':IMByJMessage')
+//    compile project(':IMByJMessage')
 
-
+    compile 'com.github.sinothk:IMByJMessage:v1.2.180403'
 }
