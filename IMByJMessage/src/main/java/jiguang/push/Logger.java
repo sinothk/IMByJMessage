@@ -1,4 +1,4 @@
-package jiguang.chat;
+package jiguang.push;
 
 import android.util.Log;
 

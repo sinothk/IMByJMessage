@@ -1,4 +1,4 @@
-package jiguang.chat;
+package jiguang.push;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

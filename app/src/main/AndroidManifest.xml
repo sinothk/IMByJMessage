@@ -518,6 +518,13 @@
         &lt;!&ndash; Required. AppKey copied from Portal &ndash;&gt;
         <meta-data android:name="JPUSH_APPKEY" android:value="您应用的Appkey"/>-->
 
+        <!-- For test only 测试状态通知栏，需要打开的Activity -->
+        <activity android:name=".TestActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

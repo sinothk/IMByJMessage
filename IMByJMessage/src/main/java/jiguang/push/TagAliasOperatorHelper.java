@@ -1,4 +1,4 @@
-package jiguang.chat;
+package jiguang.push;
 
 import android.content.Context;
 import android.os.Handler;
@@ -65,7 +65,7 @@ public class TagAliasOperatorHelper {
     public void put(int sequence,Object tagAliasBean){
         setActionCache.put(sequence,tagAliasBean);
     }
-    private Handler delaySendHandler = new Handler(){
+    private  Handler delaySendHandler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what){
@@ -102,6 +102,7 @@ public class TagAliasOperatorHelper {
             }
         }
     };
+
     public void handleAction(Context context,int sequence,String mobileNumber){
         put(sequence,mobileNumber);
         Logger.d(TAG,"sequence:"+sequence+",mobileNumber:"+mobileNumber);
