@@ -42,14 +42,16 @@ dependencies {
     androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-//    api files('libs/BaiduLBS_Android.jar')
-//    api files('libs/core-3.2.1.jar')
-//    api files('libs/gson-2.2.1.jar')
-//    api files('libs/jmessage-android_v2.3.0.jar')
-//    api files('libs/picasso-2.5.2.jar')
-//    api files('libs/pinyin4j-2.5.0.jar')
-//    api files('libs/universal-image-loader-1.9.5.jar')
-//    api files('libs/jpush-android-3.1.1.jar')
+    api files('libs/BaiduLBS_Android.jar')
+    api files('libs/core-3.2.1.jar')
+    api files('libs/gson-2.2.1.jar')
+    api files('libs/jmessage-android_v2.3.0.jar')
+    api files('libs/picasso-2.5.2.jar')
+    api files('libs/pinyin4j-2.5.0.jar')
+    api files('libs/universal-image-loader-1.9.5.jar')
+    api files('libs/jpush-android-3.1.1.jar')
+    api files('libs/jcore-android-1.1.9.jar')
+
     //
     api 'com.android.support:multidex:1.0.3'
     api 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
