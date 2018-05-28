@@ -33,31 +33,33 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile "com.android.support:appcompat-v7:$APPCOMPAT_VERSION"
-    compile "com.android.support:recyclerview-v7:$APPCOMPAT_VERSION"
-    compile "com.android.support:design:$APPCOMPAT_VERSION"
-    compile "com.android.support:support-v4:$APPCOMPAT_VERSION"
-    testCompile 'junit:junit:4.12'
-    androidTestCompile('com.android.support.test.espresso:espresso-core:3.0.1', {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api "com.android.support:appcompat-v7:$APPCOMPAT_VERSION"
+    api "com.android.support:recyclerview-v7:$APPCOMPAT_VERSION"
+    api "com.android.support:design:$APPCOMPAT_VERSION"
+    api "com.android.support:support-v4:$APPCOMPAT_VERSION"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile files('libs/BaiduLBS_Android.jar')
-    compile files('libs/core-3.2.1.jar')
-    compile files('libs/gson-2.2.1.jar')
-    compile files('libs/jmessage-android_v2.3.0.jar')
-    compile files('libs/picasso-2.5.2.jar')
-    compile files('libs/pinyin4j-2.5.0.jar')
-    compile files('libs/universal-image-loader-1.9.5.jar')
-    implementation files('libs/jpush-android-3.1.1.jar')
+    api files('libs/BaiduLBS_Android.jar')
+    api files('libs/core-3.2.1.jar')
+    api files('libs/gson-2.2.1.jar')
+    api files('libs/jmessage-android_v2.3.0.jar')
+    api files('libs/picasso-2.5.2.jar')
+    api files('libs/pinyin4j-2.5.0.jar')
+    api files('libs/universal-image-loader-1.9.5.jar')
+    api files('libs/jpush-android-3.1.1.jar')
+    api files('libs/jcore-android-1.1.9.jar')
+
     //
-    compile 'com.android.support:multidex:1.0.3'
-    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'org.greenrobot:eventbus:3.0.0'
-    compile 'io.reactivex:rxandroid:1.2.1'
-    compile 'com.contrarywind:Android-PickerView:3.2.4'
+    api 'com.android.support:multidex:1.0.3'
+    api 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    api 'com.github.bumptech.glide:glide:3.7.0'
+    api 'org.greenrobot:eventbus:3.0.0'
+    api 'io.reactivex:rxandroid:1.2.1'
+    api 'com.contrarywind:Android-PickerView:3.2.4'
     //
-    compile 'com.facebook.fresco:fresco:0.12.0'
+    api 'com.facebook.fresco:fresco:0.12.0'
 
 }

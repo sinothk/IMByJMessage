@@ -109,6 +109,7 @@ public class LoginController implements View.OnClickListener {
                 final Dialog dialog = DialogCreator.createLoadingDialog(mContext,
                         mContext.getString(R.string.login_hint));
                 dialog.show();
+
                 JMessageClient.login(userId, password, new BasicCallback() {
                     @Override
                     public void gotResult(int responseCode, String responseMessage) {
