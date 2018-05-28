@@ -17,5 +17,5 @@ ext {
 
     // Version of "com.android.support:appcompat-v7", refer it as folow:
     //  compile "com.android.support:appcompat-v7:${APPCOMPAT_VERSION}"
-    APPCOMPAT_VERSION = '27.1.0'
+    APPCOMPAT_VERSION = '27.0.2'
 }
